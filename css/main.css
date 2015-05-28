@@ -84,11 +84,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -16px;
 }
 
+.whatido header h2::after {
+  width: 100px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+}
+
 .whatido__skill-list {
   list-style: none;
   padding-left: 0;
-  text-align: center;
   margin-top: 60px;
+
+  text-align: center;
 }
 
 .whatido__skill--code {
@@ -97,8 +104,8 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center top;
   padding-top: 100px;
 
-  width: 33%;
   float: left;
+  width: 33%;
 }
 
 .whatido__skill--design {
@@ -136,18 +143,69 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
 }
 
-.info-section header h2:after {
-  width: 100px;
-  border-bottom: 3px solid black;
-  margin: 0 auto;
-}
+
 
 .info-section__description {
   font-style: italic;
 }
 
-.clearfix:after {
+.clearfix :after {
   content:"";
   display:table;
   clear:both;
+}
+
+.education-experience__list img {
+  float: left;
+  width: 180px;
+  margin: 20px 20px 20px 0;
+}
+
+.education-experience__list li {
+  list-style: none;
+}
+
+.content {
+  overflow: hidden;
+}
+
+/*有没有更高效的做法？*/
+.education-experience__list li:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.photos__list img {
+  float: left;
+  width: 100%;
+}
+
+.photos__list li {
+  list-style: none;
+  width: 200px;
+  padding: 10px;
+  float: left;
+}
+
+.photos header {
+  text-align: center;
+}
+
+.photos header h2::after {
+  width: 85px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+}
+
+.info-section header {
+  text-align: center;
 }
