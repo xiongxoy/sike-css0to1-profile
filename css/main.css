@@ -40,4 +40,122 @@ body {
   box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+body {
+  font-family: 'Open Sans', 'helvetica', arial, sans-serif;
+  font-weight: 300;
+  color: #62686f;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: 300;
+}
+
+
+.main-nav {
+  background-color: #333;
+  text-align: center;
+  margin-top: -16px;
+}
+
+.main-nav ul li {
+  margin: 15px 10px;
+  list-style: none;
+  display: inline-block;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.info-section {
+  background-color: #fff;
+}
+
+.whatido {
+  padding: 1px;
+  margin-top: -16px;
+}
+
+.whatido__skill-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.whatido__skill--code {
+  background-image: url(../img/skill-code.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 100px;
+
+  display: inline;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.whatido__skill--design {
+  background-image: url(../img/skill-design.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 100px;
+
+  display: inline;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.whatido__skill--product {
+  background-image: url(../img/skill-product.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 100px;
+
+  display: inline;
+  float: left;
+  width: 33%;
+}
+
+
+.info-section {
+  padding: 30px 60px;
+}
+
+.whatido header {
+  text-align: center;
+  overflow: hidden;
+}
+
+.info-section header h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.info-section header h2:after {
+  width: 100px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+}
+
+
+.info-section__description {
+  font-style: italic;
+}
+
+.clearfix ::after {
+  content:"";
+  display:table;
+  clear:both;
+}
