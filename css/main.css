@@ -51,7 +51,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-
 .main-nav {
   background-color: #333;
   text-align: center;
@@ -98,10 +97,8 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center top;
   padding-top: 100px;
 
-  display: inline;
-  float: left;
   width: 33%;
-  text-align: center;
+  float: left;
 }
 
 .whatido__skill--design {
@@ -110,10 +107,8 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center top;
   padding-top: 100px;
 
-  display: inline;
   float: left;
   width: 33%;
-  text-align: center;
 }
 
 .whatido__skill--product {
@@ -122,11 +117,9 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center top;
   padding-top: 100px;
 
-  display: inline;
   float: left;
   width: 33%;
 }
-
 
 .info-section {
   padding: 30px 60px;
@@ -149,12 +142,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-
 .info-section__description {
   font-style: italic;
 }
 
-.clearfix ::after {
+.clearfix:after {
   content:"";
   display:table;
   clear:both;
