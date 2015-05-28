@@ -84,10 +84,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -16px;
 }
 
-.whatido header h2::after {
-  width: 100px;
+.whatido header h2:after {
   border-bottom: 3px solid black;
+  width: 100px;
   margin: 0 auto;
+  content: "";
+  display: block;
 }
 
 .whatido__skill-list {
@@ -143,13 +145,11 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 3px;
 }
 
-
-
 .info-section__description {
   font-style: italic;
 }
 
-.clearfix :after {
+.clearfix:after{
   content:"";
   display:table;
   clear:both;
@@ -200,10 +200,12 @@ html {
   text-align: center;
 }
 
-.photos header h2::after {
-  width: 85px;
+.photos header h2:after {
   border-bottom: 3px solid black;
+  width: 85px;
   margin: 0 auto;
+  content: "";
+  display: block;
 }
 
 .info-section header {
