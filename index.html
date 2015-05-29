@@ -76,7 +76,7 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
         <header>
           <h2>Education &amp; Experience</h2>
         </header>
-        <ul class="clearfix education-experience__list">
+        <ul class="education-experience__list">
           <li>
             <img src="img/strikingly-logo.png" alt="Strikingly">
             <div class="content">
@@ -141,7 +141,7 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
         <header>
           <h2>Get in Touch</h2>
         </header>
-        <ul class="get-in-touch__list">
+        <ul class="clearfix get-in-touch__list">
           <li>
             <a href="#"><img src="img/fb-icon.png" alt=""></a>
             <p>Facebook</p>
@@ -161,24 +161,30 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
         </ul>
       </section>
 
-      <section class="info-section contact">
+      <section class="info-section contact container">
         <header>
           <h2>Or...Leave a Message</h2>
         </header>
         <form action="">
-          <label for="name">Name</label>
-          <input name="name" id="name" type="text">
-          <label for="email">Email</label>
-          <input name="email" id="email" type="email">
-          <label for="message">Message</label>
-          <textarea name="message" id="message"></textarea>
-          <button type="submit">Submit</button>
+            <div>
+              <label for="name">Name</label>
+              <input name="name" id="name" type="text">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input name="email" id="email" type="email">
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
         </form>
       </section>
 
     </div>
 
-
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400' rel='stylesheet' type='text/css'>
+
   </body>
 </html>

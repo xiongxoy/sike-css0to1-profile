@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
 body {
   background-image: url(http://uploads.striking.ly/page/images/backgrounds/bg5.jpg);
   background-attachment: fixed;
@@ -149,39 +158,25 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 }
 
-.clearfix:after{
+.clearfix:after {
   content:"";
   display:table;
   clear:both;
 }
 
-.education-experience__list img {
+.education-experience__list li img {
   float: left;
   width: 180px;
-  margin: 20px 20px 20px 0;
+  margin: 20px 30px 20px 0;
 }
 
 .education-experience__list li {
   list-style: none;
-}
-
-.content {
   overflow: hidden;
 }
 
-/*有没有更高效的做法？*/
-.education-experience__list li:after {
-  content:"";
-  display:table;
-  clear:both;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
+.education-experience__list .content {
+  overflow: hidden;
 }
 
 .photos__list img {
@@ -200,7 +195,7 @@ html {
   text-align: center;
 }
 
-.photos header h2:after {
+.info-section header h2:after {
   border-bottom: 3px solid black;
   width: 85px;
   margin: 0 auto;
@@ -211,3 +206,70 @@ html {
 .info-section header {
   text-align: center;
 }
+
+/***************************
+ *  实现页面内容 - Part 3  *
+ ***************************/
+.get-in-touch__list {
+  margin: 0 auto;
+}
+
+.get-in-touch__list li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+/**************************
+ *  实现 Leave A Message  *
+ **************************/
+.contact {
+  margin-bottom: 30px;
+  padding-bottom: 80px;
+}
+
+.contact form {
+  margin-top: 60px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.contact div {
+  position: relative;
+  width: 100%;
+}
+
+.contact label {
+  position: absolute;
+  text-align: right;
+  margin: 10px auto;
+  margin-right: 10px;
+
+  right: 100%;
+  width: 100px;
+}
+
+.contact button {
+  border: none;
+  border-radius: 9999px;
+
+  background: #ffd524;
+
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+  color: #fff;
+  box-shadow: 0 3px 0 #daae1d;
+
+  width: 100%;
+}
+
