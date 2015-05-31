@@ -108,35 +108,24 @@ h1, h2, h3, h4, h5, h6 {
 
   text-align: center;
 }
+.whatido__skill  {
+  padding-top: 100px;
+  float: left;
+  width: 33%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
 
 .whatido__skill--code {
   background-image: url(../img/skill-code.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: 100px;
-
-  float: left;
-  width: 33%;
 }
 
 .whatido__skill--design {
   background-image: url(../img/skill-design.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: 100px;
-
-  float: left;
-  width: 33%;
 }
 
 .whatido__skill--product {
   background-image: url(../img/skill-product.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  padding-top: 100px;
-
-  float: left;
-  width: 33%;
 }
 
 .info-section {
@@ -225,13 +214,13 @@ h1, h2, h3, h4, h5, h6 {
  **************************/
 .contact {
   margin-bottom: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 
 .contact form {
   margin-top: 60px;
-  width: 40%;
   margin: 0 auto;
+  width: 40%;
 }
 
 .contact input,
@@ -272,4 +261,93 @@ h1, h2, h3, h4, h5, h6 {
 
   width: 100%;
 }
+
+
+/*************************************
+ *  Implement Responsive Web Design  *
+ *************************************/
+@media (max-width : 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .main-header h1 {
+    font-size: 32px;
+  }
+
+  .main-nav ul {
+    padding-left: 0;
+  }
+  .main-nav ul li{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .info-section {
+    padding: 10px;
+  }
+
+  .whatido__skill {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .education-experience__list  {
+    padding-left: 0;
+  }
+
+  .education-experience__list li {
+    text-align: center;
+  }
+
+  .education-experience__list li img {
+    width: 180px;
+    float: none;
+    margin: 30px 0 5px 0;
+    text-align: center;
+  }
+
+  .education-experience__list li .content {
+    text-align: left;
+  }
+
+  .education-experience header span {
+    display: block;
+  }
+
+  .photos__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photos__list li {
+    width: 100%;
+  }
+
+
+ .get-in-touch__list {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .get-in-touch__list li {
+    width: 50%;
+  }
+
+  .get-in-touch__list li img {
+    width: 80%;
+  }
+
+
+  .contact label {
+    position: static;
+  }
+  .contact form {
+    width: 100%;
+  }
+
+ }
+
+
 
