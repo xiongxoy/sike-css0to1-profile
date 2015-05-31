@@ -296,19 +296,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
   }
 
-  .education-experience__list li {
-    text-align: center;
-  }
-
   .education-experience__list li img {
     width: 180px;
     float: none;
     margin: 30px 0 5px 0;
-    text-align: center;
-  }
-
-  .education-experience__list li .content {
-    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .education-experience header span {
@@ -325,7 +319,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
-
  .get-in-touch__list {
     padding-left: 0;
     text-align: center;
@@ -338,7 +331,6 @@ h1, h2, h3, h4, h5, h6 {
   .get-in-touch__list li img {
     width: 80%;
   }
-
 
   .contact label {
     position: static;
